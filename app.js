@@ -20,6 +20,10 @@ app.get("/", (req,res)=>{
     })
 })
 
+import MovieAppRoutes from "./routes/MovieAppRoutes.js"
+
+app.use("/", MovieAppRoutes)
+
 app.listen(port, ()=>{
     console.log(`Server running on http://localhost:${port}`)
 })

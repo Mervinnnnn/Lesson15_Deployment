@@ -1,5 +1,9 @@
-import MovieAppModel from "../models/MovieAppModel.js"
+import MovieAppModel from "../models/MovieAppModel.js";
 
 export const SchedulePage = (req,res)=>{
-    res.render('index')
+    res.render('schedule')
+}
+
+export const TicketPage = (req,res)=>{
+    res.render('ticket')
 }
